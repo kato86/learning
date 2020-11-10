@@ -1,6 +1,16 @@
 # learning
 My learning path
 
+# JavaScript
+
+# sort()
+
+let arr = [1, 3, 5, 7, 8, 90, 11, 2, 6];
+
+function compare(a, b) {
+  return a - b;
+}
+
 Data Structures:
 ________________
 
