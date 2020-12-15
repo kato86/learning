@@ -46,7 +46,7 @@ __________
 
 -- All the prefix-tree searches
 
-#stopPropagation()
+# stopPropagation()
 
 Method stops the bubbling of an event to parent elements
 
