@@ -70,6 +70,16 @@ function bgChange() {
 btn.addEventListener('click', bgChange);
 </code>
 
+# Event Objects
+
+<code>function bgChange(e) {
+  const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  e.target.style.backgroundColor = rndCol;
+  console.log(e);
+}
+
+btn.addEventListener('click', bgChange);</code>
+
 # stopPropagation()
 
 Method stops the bubbling of an event to parent elements
