@@ -50,7 +50,7 @@ __________
 
 Method stops the bubbling of an event to parent elements
 
-video.onclick = function(e) {
+<code>video.onclick = function(e) {
   e.stopPropagation();
   video.play();
-};
+};</code>
