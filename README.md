@@ -57,6 +57,19 @@ btn.onclick = function() {
 }
 </code>
 
+# addEventListener()
+
+<code>
+const btn = document.querySelector('button');
+
+function bgChange() {
+  const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  document.body.style.backgroundColor = rndCol;
+}
+
+btn.addEventListener('click', bgChange);
+</code>
+
 # stopPropagation()
 
 Method stops the bubbling of an event to parent elements
