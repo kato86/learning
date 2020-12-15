@@ -44,7 +44,18 @@ __________
 
 -- All the prefix-tree searches
 
-<stron>EVENTS</stron>
+<h1>EVENTS</h1>
+
+# Event handler properties
+
+<code>
+const btn = document.querySelector('button');
+
+btn.onclick = function() {
+  const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  document.body.style.backgroundColor = rndCol;
+}
+</code>
 
 # stopPropagation()
 
