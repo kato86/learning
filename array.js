@@ -44,3 +44,15 @@ console.log(hobbies);
 // remove element at the end of the array
 hobbies.pop();
 console.log(hobbies);
+
+// **********************************************
+// USE splice() METHOD TO ADD, REMOVE FROM ARRAY
+
+// add a new hobbie afeter the first element of the array
+hobbies.splice(1, 0, 'Coding');
+console.log(hobbies);
+
+// delete hobbie from array
+// array before deleting ['Sports', 'Coding', 'Reading']
+hobbies.splice(0, 1);
+console.log(hobbies); // ['Coding', 'Reading'];
