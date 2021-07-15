@@ -14,3 +14,12 @@ console.log(arr4);
 // 5
 const arr5 = Array.from('Some string');
 console.log(arr5);
+
+// NESTED ARRAYS
+const nestArr = [[1, 2, 3], [4, 5, 6]];
+
+for (let data of nestArr) {
+    for (let dataPoint of data) {
+        console.log(dataPoint);
+    }
+}
