@@ -1,4 +1,6 @@
 // **********************************************
+// ARRAYS
+// **********************************************
 // Creating arrays
 
 // 1
@@ -100,3 +102,17 @@ console.log('bobIndex', bobIndex);
 // USE includes() METHOD TO FIND ELEMENT IN ARRAY
 const includeArray = [1.1, 1.2, 1.3, 1.4];
 console.log('includes: ', includeArray.includes(1.2));
+
+// **********************************************
+// USE forEach() METHOD TO FIND ELEMENT IN ARRAY
+
+const prices = [11.99, 6.99, 4.99];
+const tax = 0.23;
+const taxAdjustedPrices = [];
+
+prices.forEach((price, idx, prices) => {
+    // taxAdjustedPrices.push(price * (1 + tax));
+    const priceObj = { index: idx, taxAdjPrice: price * (1 + tax) };
+    taxAdjustedPrices.push(priceObj);
+});
+console.log(taxAdjustedPrices);
