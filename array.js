@@ -56,3 +56,8 @@ console.log(hobbies);
 // array before deleting ['Sports', 'Coding', 'Reading']
 hobbies.splice(0, 1);
 console.log(hobbies); // ['Coding', 'Reading'];
+
+// **********************************************
+// USE slice() METHOD TO copy array
+const newArr = hobbies.slice();
+console.log('newArr', newArr);
