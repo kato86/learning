@@ -54,10 +54,16 @@ console.log(hobbies);
 
 // delete hobbie from array
 // array before deleting ['Sports', 'Coding', 'Reading']
-hobbies.splice(0, 1);
-console.log(hobbies); // ['Coding', 'Reading'];
+// hobbies.splice(0, 1);
+// console.log(hobbies); // ['Coding', 'Reading'];
 
 // **********************************************
 // USE slice() METHOD TO copy array
 const newArr = hobbies.slice();
 console.log('newArr', newArr);
+
+// **********************************************
+// USE concat() METHOD TO COMBINES ARRAYS INTO ONE ARRAY
+const newArray = ['Swimming', 'Running'];
+const concatTwoArrays = newArray.concat(hobbies);
+console.log(concatTwoArrays);
