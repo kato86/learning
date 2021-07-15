@@ -116,3 +116,16 @@ prices.forEach((price, idx, prices) => {
     taxAdjustedPrices.push(priceObj);
 });
 console.log(taxAdjustedPrices);
+
+// **********************************************
+// USE map() METHOD TO FIND ELEMENT IN ARRAY
+
+const mapPrices = [11.99, 6.99, 4.99];
+const mapTax = 0.23;
+
+const mapTaxAdjustedPrices = mapPrices.map((price, idx, prices) => {
+    const priceObj = { index: idx, taxAdjPrice: price * (1 + tax) };
+    return priceObj;
+});
+console.log('prices: ', mapPrices);
+console.log('taxAdjustedPrices', mapTaxAdjustedPrices);
