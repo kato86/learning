@@ -67,3 +67,31 @@ console.log('newArr', newArr);
 const newArray = ['Swimming', 'Running'];
 const concatTwoArrays = newArray.concat(hobbies);
 console.log(concatTwoArrays);
+
+// **********************************************
+// USE indexOf() METHOD TO SEARCH ELEMENT FROM ARRAY
+console.log(concatTwoArrays.indexOf('Running'));
+
+// check and find index of 'Running' hobbie, and use if statement to delete this hobbie
+if (concatTwoArrays.indexOf('Running')) {
+    const elemIndex = concatTwoArrays.indexOf('Running');
+    concatTwoArrays.splice(elemIndex, 1);
+}
+console.log(concatTwoArrays);
+
+// **********************************************
+// USE find() and findIndex() METHOD TO SEARCH ELEMENT FROM ARRAY
+
+const personData = [{ name: 'Kamil' }, { name: 'Bob' }];
+const kamil = personData.find((person, idx, persons) => {
+    console.log('person: ', person);
+    console.log('idx: ', idx);
+    console.log('persons: ', persons);
+    return person.name === 'Kamil';
+});
+console.log(kamil);
+
+const bobIndex = personData.findIndex((person, idx, persons) => {
+    return person.name === 'Bob';
+});
+console.log('bobIndex', bobIndex);
