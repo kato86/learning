@@ -95,3 +95,8 @@ const bobIndex = personData.findIndex((person, idx, persons) => {
     return person.name === 'Bob';
 });
 console.log('bobIndex', bobIndex);
+
+// **********************************************
+// USE includes() METHOD TO FIND ELEMENT IN ARRAY
+const includeArray = [1.1, 1.2, 1.3, 1.4];
+console.log('includes: ', includeArray.includes(1.2));
