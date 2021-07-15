@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    border: 1px solid orangered;
+    height: 100vh;
+}
+
+.welcome-text {
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
