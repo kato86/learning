@@ -145,3 +145,9 @@ const filteredArray = prices.filter((price, index, prices) => {
     return price > 6;
 });
 console.log('Filtered prices: ', filteredArray);
+
+// **********************************************
+// USE reduce() METHOD TO SUM ELEMENTS IN ARRAY
+
+const sum = prices.reduce((prevValue, currentValue) => prevValue + currentValue, 0);
+console.log('reduced prices: ', sum);
