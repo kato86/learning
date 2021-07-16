@@ -137,3 +137,11 @@ const sortPrices = [11.99, 6.99, 4.99].sort((a, b) => {
     return a - b;
 });
 console.log('Sort: ', sortPrices);
+
+// **********************************************
+// USE filter() METHOD TO SORT ELEMENT IN ARRAY
+
+const filteredArray = prices.filter((price, index, prices) => {
+    return price > 6;
+});
+console.log('Filtered prices: ', filteredArray);
