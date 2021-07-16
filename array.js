@@ -129,3 +129,11 @@ const mapTaxAdjustedPrices = mapPrices.map((price, idx, prices) => {
 });
 console.log('prices: ', mapPrices);
 console.log('taxAdjustedPrices', mapTaxAdjustedPrices);
+
+// **********************************************
+// USE sort() METHOD TO SORT ELEMENT IN ARRAY
+
+const sortPrices = [11.99, 6.99, 4.99].sort((a, b) => {
+    return a - b;
+});
+console.log('Sort: ', sortPrices);
