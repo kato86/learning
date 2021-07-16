@@ -151,3 +151,14 @@ console.log('Filtered prices: ', filteredArray);
 
 const sum = prices.reduce((prevValue, currentValue) => prevValue + currentValue, 0);
 console.log('reduced prices: ', sum);
+
+// **********************************************
+// USE split() AND join() METHOD TO SPLIT AND JOIN ELEMENTS IN ARRAY
+
+const data = 'new york;10.99;2000';
+const transformedData = data.split(';');
+console.log(transformedData);
+
+const data2 = ["John", "Doe"];
+const joinData = data2.join(' ');
+console.log(joinData);
