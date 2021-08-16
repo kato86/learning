@@ -168,3 +168,12 @@ console.log(joinData);
 
 const copiedNameFragment = [...data2]
 console.log("SPREAD OPERATOR: ", copiedNameFragment);
+
+// **********************************************
+// USE DESTRUCTURING
+
+const nameData = ['John', 'Doe', 'Mr', '99'];
+const [ firstName, lastName, ...otherData ] = nameData;
+console.log(firstName + ' ' + lastName);
+console.log(...otherData);
+
