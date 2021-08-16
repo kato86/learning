@@ -162,3 +162,9 @@ console.log(transformedData);
 const data2 = ["John", "Doe"];
 const joinData = data2.join(' ');
 console.log(joinData);
+
+// **********************************************
+// USE SPREAD OPERATOR (...)
+
+const copiedNameFragment = [...data2]
+console.log("SPREAD OPERATOR: ", copiedNameFragment);
