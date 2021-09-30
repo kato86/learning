@@ -187,4 +187,10 @@ for (let value of ids.values()) {
     console.log(value);
 }
 
+// Map
+const personMap1 = { name: 'Kamil' };
+const personMap2 = { name: 'Piotr' };
 
+const personMapData = new Map([[personMap1, [{ date: 'yesterday', price: 10}]]]);
+console.log(personMapData);
+console.log(personMapData.get(personMap1));
