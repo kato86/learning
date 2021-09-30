@@ -177,3 +177,14 @@ const [ firstName, lastName, ...otherData ] = nameData;
 console.log(firstName + ' ' + lastName);
 console.log(...otherData);
 
+// **********************************************
+// Maps & Sets
+
+// Sets
+const ids = new Set(['hi', 'from', 'set']);
+
+for (let value of ids.values()) {
+    console.log(value);
+}
+
+
