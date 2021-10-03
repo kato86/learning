@@ -194,3 +194,13 @@ const personMap2 = { name: 'Piotr' };
 const personMapData = new Map([[personMap1, [{ date: 'yesterday', price: 10}]]]);
 console.log(personMapData);
 console.log(personMapData.get(personMap1));
+
+// **********************************************
+// WeakSet
+
+let personWeakSet = { name: 'Kamil' };
+const personsWeakSets = new WeakSet();
+personsWeakSets.add(personWeakSet);
+
+console.log(personsWeakSets);
+
