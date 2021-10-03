@@ -204,3 +204,14 @@ personsWeakSets.add(personWeakSet);
 
 console.log(personsWeakSets);
 
+// **********************************************
+// WeakMap
+
+const personWeakMap = new WeakMap();
+personWeakMap.set(personWeakSet, 'Extra info');
+
+personWeakSet = null;
+
+console.log(personWeakMap);
+
+
